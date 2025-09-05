@@ -1,0 +1,11 @@
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/bin/Debug/net9.0/BlazorApp.Domain.deps.json
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/bin/Debug/net9.0/BlazorApp.Domain.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/bin/Debug/net9.0/BlazorApp.Domain.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.AssemblyInfoInputs.cache
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.AssemblyInfo.cs
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.csproj.CoreCompileInputs.cache
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/refint/BlazorApp.Domain.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/BlazorApp.Domain.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/obj/Debug/net9.0/ref/BlazorApp.Domain.dll

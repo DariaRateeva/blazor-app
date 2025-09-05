@@ -1,0 +1,28 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["BlazorApp/BlazorApp.csproj", "BlazorApp/"]
+COPY ["BlazorApp.Client/BlazorApp.Client.csproj", "BlazorApp.Client/"]
+COPY ["BlazorApp.Shared/BlazorApp.Shared.csproj", "BlazorApp.Shared/"]
+COPY ["BlazorApp.Application/BlazorApp.Application.csproj", "BlazorApp.Application/"]
+COPY ["BlazorApp.Domain/BlazorApp.Domain.csproj", "BlazorApp.Domain/"]
+COPY ["BlazorApp.Infrastructure/BlazorApp.Infrastructure.csproj", "BlazorApp.Infrastructure/"]
+RUN dotnet restore "BlazorApp/BlazorApp.csproj"
+COPY . .
+WORKDIR "/src/BlazorApp"
+RUN dotnet build "./BlazorApp.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./BlazorApp.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "BlazorApp.dll"]

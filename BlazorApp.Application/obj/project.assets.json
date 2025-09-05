@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "BlazorApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BlazorApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorApp.Domain.dll": {}
+        }
+      },
+      "BlazorApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BlazorApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorApp.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlazorApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlazorApp.Domain/BlazorApp.Domain.csproj",
+      "msbuildProject": "../BlazorApp.Domain/BlazorApp.Domain.csproj"
+    },
+    "BlazorApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../BlazorApp.Shared/BlazorApp.Shared.csproj",
+      "msbuildProject": "../BlazorApp.Shared/BlazorApp.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "BlazorApp.Domain >= 1.0.0",
+      "BlazorApp.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/daria/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj",
+      "projectName": "BlazorApp.Application",
+      "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj",
+      "packagesPath": "/Users/daria/.nuget/packages/",
+      "outputPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/daria/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj": {
+              "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj"
+            },
+            "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Shared/BlazorApp.Shared.csproj": {
+              "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Shared/BlazorApp.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.302/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
