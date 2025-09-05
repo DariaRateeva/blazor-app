@@ -1,9 +1,5 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.8lg4o38nft.pdb
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.9wh1m3s8jk.wasm
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.zxny9n0gw0.pdb
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.nwclyny4nc.wasm
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/dotnet.js
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.map
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.st0ovrfdhi.js
@@ -244,7 +240,6 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Security.Cryptography.Cng.6pipl4ncvr.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Data.Common.q3ol77wfoq.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.Abstractions.apuz8nsfml.wasm.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.nwclyny4nc.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Options.l36scmr1xu.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Net.Mail.f7c6cnpbzl.wasm.gz
@@ -259,7 +254,6 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.InteropServices.kg92xkhxu6.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/dotnet.runtime.593bvuk5yc.js.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Diagnostics.Process.vv59ito6pv.wasm.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.9wh1m3s8jk.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.Emit.Lightweight.lkjxsh5fdq.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.DependencyInjection.v66dtpac4v.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.8ewlps0g9m.wasm.gz
@@ -294,7 +288,6 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.ComponentModel.u0b472gpzn.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Diagnostics.FileVersionInfo.c8h918kj1s.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.ObjectModel.0h2ofj4d0g.wasm.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.8lg4o38nft.pdb.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Diagnostics.StackTrace.tn3gqtft0g.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Resources.ResourceManager.vhjl4emd1k.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js.gz
@@ -369,7 +362,6 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.Serialization.Primitives.b17xem4kd9.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Net.NetworkInformation.v9f1nrwq71.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Security.Cryptography.Algorithms.mdf98ysb2r.wasm.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.zxny9n0gw0.pdb.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebSockets.64mxs31z7u.wasm.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/dotnet.js.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/System.Runtime.CompilerServices.Unsafe.tikfkmjbfm.wasm.gz
@@ -1036,11 +1028,6 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/cgpxrpn25v-tjcz0u77k5.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/nqv701rcs4-tptq2av103.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/4k6q806yay-lfu7j35m59.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/5yz9bm4tfu-nwclyny4nc.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/qbumiq51nf-zxny9n0gw0.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/9kl82k5nwm-9wh1m3s8jk.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/fkdu65z1dr-8lg4o38nft.gz
-/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/63dvynpkij-cykzv7509p.gz
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/staticwebassets.build.json
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/staticwebassets.development.json
@@ -1050,3 +1037,17 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/refint/BlazorApp.Client.dll
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/BlazorApp.Client.pdb
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/ref/BlazorApp.Client.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.aaajs1qk63.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.w49c8wut4g.wasm
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.3ojmsz4uk4.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.2ers4qks1m.wasm
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.2ers4qks1m.wasm.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.w49c8wut4g.wasm.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Client.aaajs1qk63.pdb.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/bin/Debug/net9.0/wwwroot/_framework/BlazorApp.Shared.3ojmsz4uk4.pdb.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/BlazorApp.Client.sourcelink.json
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/5yz9bm4tfu-2ers4qks1m.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/qbumiq51nf-3ojmsz4uk4.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/9kl82k5nwm-w49c8wut4g.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/fkdu65z1dr-aaajs1qk63.gz
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Client/obj/Debug/net9.0/compressed/63dvynpkij-l735xjazau.gz

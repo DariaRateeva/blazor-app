@@ -13,12 +13,12 @@ services:
       - app-network
 
   blazorapp:
-    # Instead of building the image locally, we reference a pre-built image.
-    # You would replace this with the name of your image on a registry like Docker Hub.
-    image: "yourusername/yourblazorapp:latest"
+    build:
+      context: .
+      dockerfile: BlazorApp/Dockerfile
     container_name: blazorapp
     ports:
-      - "5000:80"
+      - "5000:8080" # Changed to 8080 to match the Dockerfile EXPOSE
     depends_on:
       - mssql
     networks:

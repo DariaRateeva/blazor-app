@@ -15,3 +15,4 @@
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/obj/Debug/net9.0/refint/BlazorApp.Application.dll
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/obj/Debug/net9.0/BlazorApp.Application.pdb
 /Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/obj/Debug/net9.0/ref/BlazorApp.Application.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/obj/Debug/net9.0/BlazorApp.Application.sourcelink.json
