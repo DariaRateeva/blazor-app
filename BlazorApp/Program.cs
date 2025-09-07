@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents()
     .AddAuthenticationStateSerialization();
@@ -18,7 +18,6 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddControllers();
-// Configure HttpClient with BaseAddress for server-side prerendering
 builder.Services.AddScoped(sp => 
 {
     var navigationManager = sp.GetRequiredService<NavigationManager>();
@@ -28,7 +27,6 @@ builder.Services.AddScoped(sp =>
     };
 });
 
-// Keep this for IHttpClientFactory if you need it elsewhere
 builder.Services.AddHttpClient();
 
 
@@ -42,23 +40,20 @@ builder.Services.AddAuthorization();
 
 // --- START: DATABASE CONFIGURATION CHANGES ---
 
-// Get the connection strings from appsettings.json
+// connection strings from appsettings.json
 var defaultConnectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 var applicationConnectionString = builder.Configuration.GetConnectionString("ApplicationConnection") 
     ?? throw new InvalidOperationException("Connection string 'ApplicationConnection' not found.");
 
-// Configure ApplicationDbContext for Identity to use SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(applicationConnectionString));
 
-// Configure AppDbContext for your application data to use SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(defaultConnectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-// Configure Identity Core to use the ApplicationDbContext
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddSignInManager()
@@ -70,7 +65,6 @@ builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSe
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseWebAssemblyDebugging();
@@ -79,7 +73,6 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -91,7 +84,6 @@ app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(BlazorApp.Client._Imports).Assembly);
 
-// Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
 app.MapControllers();
 
