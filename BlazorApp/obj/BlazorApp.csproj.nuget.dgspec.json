@@ -29,6 +29,9 @@
               "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj": {
                 "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj"
               },
+              "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/BlazorApp.Infrastructure.csproj": {
+                "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/BlazorApp.Infrastructure.csproj"
+              },
               "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Shared/BlazorApp.Shared.csproj": {
                 "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Shared/BlazorApp.Shared.csproj"
               }
@@ -50,6 +53,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -247,9 +260,6 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj": {
-                "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj"
-              },
               "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj": {
                 "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj"
               }
@@ -413,6 +423,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
               "version": "[9.0.7, )"

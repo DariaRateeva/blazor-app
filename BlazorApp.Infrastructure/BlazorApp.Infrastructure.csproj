@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BlazorApp.Application\BlazorApp.Application.csproj" />
       <ProjectReference Include="..\BlazorApp.Domain\BlazorApp.Domain.csproj" />
     </ItemGroup>
 

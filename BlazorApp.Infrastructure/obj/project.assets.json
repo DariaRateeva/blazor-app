@@ -989,20 +989,6 @@
           }
         }
       },
-      "BlazorApp.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "BlazorApp.Domain": "1.0.0",
-          "BlazorApp.Shared": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BlazorApp.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BlazorApp.Application.dll": {}
-        }
-      },
       "BlazorApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1011,16 +997,6 @@
         },
         "runtime": {
           "bin/placeholder/BlazorApp.Domain.dll": {}
-        }
-      },
-      "BlazorApp.Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/BlazorApp.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BlazorApp.Shared.dll": {}
         }
       }
     }
@@ -2773,25 +2749,14 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BlazorApp.Application/1.0.0": {
-      "type": "project",
-      "path": "../BlazorApp.Application/BlazorApp.Application.csproj",
-      "msbuildProject": "../BlazorApp.Application/BlazorApp.Application.csproj"
-    },
     "BlazorApp.Domain/1.0.0": {
       "type": "project",
       "path": "../BlazorApp.Domain/BlazorApp.Domain.csproj",
       "msbuildProject": "../BlazorApp.Domain/BlazorApp.Domain.csproj"
-    },
-    "BlazorApp.Shared/1.0.0": {
-      "type": "project",
-      "path": "../BlazorApp.Shared/BlazorApp.Shared.csproj",
-      "msbuildProject": "../BlazorApp.Shared/BlazorApp.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "BlazorApp.Application >= 1.0.0",
       "BlazorApp.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8"
@@ -2822,9 +2787,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj": {
-              "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Application/BlazorApp.Application.csproj"
-            },
             "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj": {
               "projectPath": "/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Domain/BlazorApp.Domain.csproj"
             }

@@ -1,96 +1,74 @@
-using BlazorApp.Domain.Entities;
-using BlazorApp.Infrastructure;
+using  BlazorApp.Application.Products.Queries;
+using  BlazorApp.Application.Products.Commands;
 using BlazorApp.Shared.Dtos;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ProductsController(AppDbContext context) : ControllerBase
+public class ProductsController : ControllerBase
 {
-    // GET
+    private readonly IMediator _mediator;
+
+    public ProductsController(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
+
     [HttpGet]
-    public async Task<IEnumerable<ProductDto>> GetProducts()
+    public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
     {
-        var products = await context.Products.ToListAsync();
-        return products.Select(p => new ProductDto
-        {
-            Id = p.Id,
-            Name = p.Name,
-            Color = p.Color,
-            Model = p.Model
-        });
+        var result = await _mediator.Send(new GetProductsQuery());
+        return Ok(result);
     }
 
-
-    // GET by ID
     [HttpGet("{id}")]
-    public async Task<ActionResult<Product>> GetProduct(int id)
+    public async Task<ActionResult<ProductDto>> GetProduct(int id)
     {
-        var product = await context.Products.FindAsync(id);
-        if (product == null)
-        {
+        var result = await _mediator.Send(new GetProductByIdQuery { Id = id });
+        
+        if (result == null)
             return NotFound();
-        }
-        return product;
+
+        return Ok(result);
     }
 
-    // POST
     [HttpPost]
-    public async Task<ActionResult<Product>> PostProduct(Product product)
+    public async Task<ActionResult<ProductDto>> PostProduct(ProductDto productDto)
     {
-        context.Products.Add(product);
-        await context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
+        var command = new CreateProductCommand(productDto);
+        var productId = await _mediator.Send(command);
+        
+        var createdProduct = await _mediator.Send(new GetProductByIdQuery { Id = productId });
+        return CreatedAtAction(nameof(GetProduct), new { id = productId }, createdProduct);
     }
 
-    // PUT
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutProduct(int id, Product product)
+    public async Task<IActionResult> PutProduct(int id, ProductDto productDto)
     {
-        if (id != product.Id)
-        {
+        if (id != productDto.Id)
             return BadRequest();
-        }
 
-        context.Entry(product).State = EntityState.Modified;
-        try
-        {
-            await context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!ProductExists(id))
-            {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
-        }
+        var command = new UpdateProductCommand(productDto);
+        var result = await _mediator.Send(command);
+        
+        if (!result)
+            return NotFound();
+
         return NoContent();
     }
 
-    // DELETE
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteProduct(int id)
     {
-        var product = await context.Products.FindAsync(id);
-        if (product == null)
-        {
+        var command = new DeleteProductCommand { Id = id };
+        var result = await _mediator.Send(command);
+        
+        if (!result)
             return NotFound();
-        }
 
-        context.Products.Remove(product);
-        await context.SaveChangesAsync();
         return NoContent();
-    }
-
-    private bool ProductExists(int id)
-    {
-        return context.Products.Any(e => e.Id == id);
     }
 }

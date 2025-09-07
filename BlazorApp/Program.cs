@@ -58,6 +58,9 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddSignInManager()
     .AddDefaultTokenProviders();
+builder.Services.AddMediatR(cfg => 
+    cfg.RegisterServicesFromAssembly(typeof(BlazorApp.Application.Products.Queries.GetProductsQuery).Assembly));
+
 
 // --- END: DATABASE CONFIGURATION CHANGES ---
 
