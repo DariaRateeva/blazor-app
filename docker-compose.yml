@@ -1,6 +1,4 @@
-﻿version: '3.8'
-
-services:
+﻿services:
   mssql:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: mssql
@@ -11,6 +9,12 @@ services:
       - "1433:1433"
     networks:
       - app-network
+    healthcheck:
+      test: [ "CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P YourStrong@Passw0rd -Q 'SELECT 1' -b -o /dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
 
   blazorapp:
     build:
@@ -18,11 +22,14 @@ services:
       dockerfile: BlazorApp/Dockerfile
     container_name: blazorapp
     ports:
-      - "5000:8080" # Changed to 8080 to match the Dockerfile EXPOSE
+      - "5000:8080"
     depends_on:
-      - mssql
+      mssql:
+        condition: service_healthy
     networks:
       - app-network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
 
 networks:
   app-network:

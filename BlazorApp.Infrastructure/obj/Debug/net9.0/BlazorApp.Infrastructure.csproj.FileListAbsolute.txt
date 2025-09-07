@@ -1,0 +1,16 @@
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/bin/Debug/net9.0/BlazorApp.Infrastructure.deps.json
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/bin/Debug/net9.0/BlazorApp.Infrastructure.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/bin/Debug/net9.0/BlazorApp.Infrastructure.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/bin/Debug/net9.0/BlazorApp.Domain.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/bin/Debug/net9.0/BlazorApp.Domain.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.csproj.AssemblyReference.cache
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.AssemblyInfoInputs.cache
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.AssemblyInfo.cs
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.sourcelink.json
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorAp.250B75C7.Up2Date
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/refint/BlazorApp.Infrastructure.dll
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/BlazorApp.Infrastructure.pdb
+/Users/daria/Desktop/Uni/practica/BlazorApp/BlazorApp.Infrastructure/obj/Debug/net9.0/ref/BlazorApp.Infrastructure.dll
