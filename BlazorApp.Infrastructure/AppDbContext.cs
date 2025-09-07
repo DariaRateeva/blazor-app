@@ -1,12 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using BlazorApp.Domain.Entities;
 
 namespace BlazorApp.Infrastructure
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options)
-            : base(options)
-        { }
+        public DbSet<Product> Products { get; set; }
 
     }
 }

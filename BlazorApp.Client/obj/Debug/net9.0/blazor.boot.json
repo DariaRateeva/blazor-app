@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorApp.Client",
   "resources": {
-    "hash": "sha256-F9pH2WcnVCROmCWW1hR2f9Of52hIYR2SUrGWq1A6yDQ=",
+    "hash": "sha256-xE242bosaN/B2gHepT4gycsbKD6xrcNeErShBT2kPiU=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.bvu82j4ad3.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.ptfrz3fits.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -203,10 +203,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "BlazorApp.Shared.2ers4qks1m.wasm": "BlazorApp.Shared.wasm",
-      "BlazorApp.Shared.3ojmsz4uk4.pdb": "BlazorApp.Shared.pdb",
-      "BlazorApp.Client.w49c8wut4g.wasm": "BlazorApp.Client.wasm",
-      "BlazorApp.Client.aaajs1qk63.pdb": "BlazorApp.Client.pdb"
+      "BlazorApp.Shared.2a68mj6hvh.wasm": "BlazorApp.Shared.wasm",
+      "BlazorApp.Shared.6s96tax6xm.pdb": "BlazorApp.Shared.pdb",
+      "BlazorApp.Client.szznwv3xub.wasm": "BlazorApp.Client.wasm",
+      "BlazorApp.Client.x783wu3snn.pdb": "BlazorApp.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.st0ovrfdhi.js": "sha256-MBW/zayfv+YU6mhH7y4b8NNU4D1EYd7nf9gYrFshnnY="
@@ -418,12 +418,12 @@
       "WindowsBase.pg3o6xzigg.wasm": "sha256-dz62CHynC+zqTkbMOf3vm7YAhiRA8/pIoAwuqHfBL5M=",
       "mscorlib.jl2pswegra.wasm": "sha256-mSoCIDTdCQKTipW8VmFCypW/4AopZauaYRa8LoZdHvY=",
       "netstandard.uriri6ambh.wasm": "sha256-yuH/cvPd6r8N9nfPWihyckFD7hPFP+VQtQQxEqi7HIQ=",
-      "BlazorApp.Shared.2ers4qks1m.wasm": "sha256-quUUXhQtFjhLiMhd6INdMI6QSB58Y6rr8nQTtkehXdY=",
-      "BlazorApp.Client.w49c8wut4g.wasm": "sha256-wJ4ABdZ/Fp7mwIaOj00thP4CpCYgFDmD0np4PhCuHDs="
+      "BlazorApp.Shared.2a68mj6hvh.wasm": "sha256-ynPzEpB0awQB0MTPx2Qc7sgFQpAweXXHIpD9mlEcwXI=",
+      "BlazorApp.Client.szznwv3xub.wasm": "sha256-CH6DG+5gCvbJ6rKJIV5BMnDBeDIzp4AE+xw2zbXI0Mk="
     },
     "pdb": {
-      "BlazorApp.Shared.3ojmsz4uk4.pdb": "sha256-E9UNUpJDXJx/V7NJulV01LzIw0uehAWrCfMkfQy5zMg=",
-      "BlazorApp.Client.aaajs1qk63.pdb": "sha256-LmUDbcqZbabUseFD0X0YltC4hRW2oMHK64RXsvkJ4NM="
+      "BlazorApp.Shared.6s96tax6xm.pdb": "sha256-+lOKNsQ9DRXTqvpxn4m5ue+XL7+1IUROL8TKkSfgLIk=",
+      "BlazorApp.Client.x783wu3snn.pdb": "sha256-XdREER0h+govfHr9StbG81EQ+eL0ECLEiX/b4RpZCJc="
     }
   },
   "cacheBootResources": true,

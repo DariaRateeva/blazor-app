@@ -1,0 +1,83 @@
+@page "/products"
+@rendermode InteractiveWebAssembly
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using BlazorApp.Shared.Dtos
+
+<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+<p>This component demonstrates CRUD operations for products.</p>
+
+<p>
+    <a href="/product/edit" class="btn btn-primary">Create New Product</a>
+</p>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Model</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Color</td>
+                    <td>@product.Model</td>
+                    <td>
+                        <a href="/product/edit/@product.Id" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <button class="btn btn-sm btn-outline-danger" @onclick="() => DeleteProduct(product.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<ProductDto>? products;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await LoadProducts();
+        }
+    }
+
+    private async Task LoadProducts()
+    {
+        try
+        {
+            products = await Http.GetFromJsonAsync<List<ProductDto>>("api/products");
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading products: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteProduct(int id)
+    {
+        var response = await Http.DeleteAsync($"api/products/{id}");
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadProducts();
+        }
+    }
+}

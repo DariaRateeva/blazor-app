@@ -1,0 +1,100 @@
+@page "/product/edit"
+@page "/product/edit/{id:int}"
+@rendermode InteractiveWebAssembly
+@using BlazorApp.Shared.Dtos
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+@if (Id.HasValue)
+{
+    <PageTitle>Edit Product</PageTitle>
+    <h1>Edit Product</h1>
+}
+else
+{
+    <PageTitle>Create Product</PageTitle>
+    <h1>Create Product</h1>
+}
+
+
+@if (product is not null)
+{
+    <EditForm Model="@product" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <InputText id="name" @bind-Value="product.Name" class="form-control" />
+            <ValidationMessage For="@(() => product.Name)" />
+        </div>
+
+        <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <InputText id="color" @bind-Value="product.Color" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label for="model" class="form-label">Model</label>
+            <InputText id="model" @bind-Value="product.Model" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </EditForm>
+}
+else
+{
+    <p><em>Loading...</em></p>
+}
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private ProductDto? product;
+    private string? errorMessage;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id.HasValue)
+        {
+            
+            product = await Http.GetFromJsonAsync<ProductDto>($"api/products/{Id.Value}");
+        }
+        else
+        {
+            product = new ProductDto();
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        HttpResponseMessage response;
+        if (Id.HasValue)
+        {
+            
+            response = await Http.PutAsJsonAsync($"api/products/{Id.Value}", product);
+        }
+        else
+        {
+            
+            response = await Http.PostAsJsonAsync("api/products", product);
+        }
+
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager.NavigateTo("/products");
+        }
+        else
+        {
+            errorMessage = $"Error saving product: {response.ReasonPhrase}";
+            Console.WriteLine(errorMessage);
+        }
+    }
+    
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/products");
+    }
+}

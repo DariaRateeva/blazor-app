@@ -5,6 +5,7 @@ using BlazorApp.Components;
 using BlazorApp.Components.Account;
 using BlazorApp.Data;
 using BlazorApp.Infrastructure;
+using Microsoft.AspNetCore.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,20 @@ builder.Services.AddRazorComponents()
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
+builder.Services.AddControllers();
+// Configure HttpClient with BaseAddress for server-side prerendering
+builder.Services.AddScoped(sp => 
+{
+    var navigationManager = sp.GetRequiredService<NavigationManager>();
+    return new HttpClient 
+    { 
+        BaseAddress = new Uri(navigationManager.BaseUri) 
+    };
+});
+
+// Keep this for IHttpClientFactory if you need it elsewhere
+builder.Services.AddHttpClient();
+
 
 builder.Services.AddAuthentication(options =>
     {
@@ -78,6 +93,7 @@ app.MapRazorComponents<App>()
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
+app.MapControllers();
 
 // --- START: AUTOMATIC MIGRATIONS ---
 
@@ -100,5 +116,6 @@ using (var scope = app.Services.CreateScope())
 }
 
 // --- END: AUTOMATIC MIGRATIONS ---
+
 
 app.Run();
